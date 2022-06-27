@@ -1,6 +1,6 @@
-import { CheckCircle, Lock } from "phosphor-react";
 import { isPast, format } from "date-fns";
-import ptBR from "date-fns/locale/pt-BR";
+import { CheckCircle, Lock } from "phosphor-react";
+
 import { Link, useParams } from "react-router-dom";
 import classNames from "classnames";
 
@@ -17,10 +17,10 @@ export function Lesson(props: LessonProps) {
   const isLessonAvailable = isPast(props.availableAt);
   const availableAtFormatted = format(
     props.availableAt,
-    "YYYY • MMMM D • h A",
-    {
-      locale: ptBR,
-    }
+    "YYYY • MMMM D • h A"
+    // {
+    //   locale: ptBR,
+    // }
   );
 
   console.log(availableAtFormatted, props.availableAt);
