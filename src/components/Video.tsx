@@ -1,5 +1,5 @@
 import { DefaultUi, Player, Youtube } from "@vime/react";
-import { useGetLessonsBySlugQuery } from "../graphql/generated";
+import { useGetLessonsBySlugQuery } from "../../src/graphql/generated";
 
 import {
   CaretRight,
